@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import Test
+from .views import PaymentApi, home
 
 urlpatterns = [
-    path('api/user/', Test.as_view())
+    path('', home),
+    path('api/Cost/', PaymentApi.as_view())
 ]
